@@ -1,38 +1,91 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Bubblegum Sans", cursive;
+  letter-spacing: 2px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-color: aquamarine;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 7rem;
+  align-items: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.amount {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.select {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: row;
+}
+
+.result {
+  margin-top: 2.5rem;
+  color: rgb(223, 110, 195);
+}
+
+.from-select {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-right: 5px;
 }
 
-.App-link {
-  color: #61dafb;
+.to-select {
+  display: flex;
+  flex-direction: column;
+  margin-left: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+label {
+  padding-bottom: 5px;
+  font-weight: bold;
+  color: rgb(223, 110, 195);
+}
+
+input {
+  padding: 9px;
+  width: 20.6rem;
+  border-radius: 5px;
+  outline: none;
+  background: rgba(148, 250, 148, 0.849);
+  border: 1px solid rgb(151, 105, 105);
+}
+
+.btn {
+  margin-top: 2rem;
+  padding: 6px;
+  width: 7rem;
+  height: 2.3rem;
+  border-radius: 3px;
+  border: none;
+  outline: none;
+  background: rgba(145, 216, 63, 0.788);
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: rgb(145, 216, 63);
+}
+
+select {
+  background: chartreuse;
+  appearance: none;
+  width: 10rem;
+  border-radius: 5px;
+  height: 2.3rem;
+  outline: none;
+  border: 1px solid rgb(223, 110, 195);
+  padding: 10px;
 }
